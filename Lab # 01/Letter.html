@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Letter</title>
+	<style type="text/css">
+
+		body{
+			margin: 5px;
+			border-radius: 20px;
+
+		}
+		
+		div[class="header"]{
+			padding: 6px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			border-radius: inherit;
+		}
+/*
+		[class="Academic"]{
+			padding: 6px;
+
+		}*/
+		 h2{
+		 	border-radius: 20px;
+			padding: 6px;
+			background-color: black;
+			color: white	;
+			text-align: center;
+		}
+
+		address > p{
+				display: inline;		
+		}
+		#my_name:link{
+			color: white;
+			text-decoration: none;
+		}
+		#my_name:visited{
+			color:green;
+			text-decoration: none;
+
+		}
+		#my_name:hover{
+			color:dodgerblue;
+			text-decoration: none;
+		
+		}
+		#my_name:active{
+			color: pink;
+			text-decoration: underline;
+		}
+
+		.Academic_table{
+			border: 1px solid black;
+			width: 100%;
+			text-align: center;
+			border-collapse: collapse;
+		}
+		th{
+			/*border: 1px solid black;*/
+		}
+		/*dt{
+			font-size: 18px;
+			font-weight: bold;
+		}*/
+
+		.Skills_div > div {
+			display: none;
+		}
+
+
+
+	#flex_use {
+		background-color: orange;
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-around;
+		height: 40px;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 200px;
+		background-color: orange;
+		align-content: stretch;
+	}
+	#data_{
+			margin-left:6px;
+
+		}
+
+
+
+
+#Foot> p{
+	/*padding: 90px;*/
+	text-align: center;
+}
+
+
+
+	.Skills_div > dl {
+				display: inline-flex;
+			background-color: magenta;
+
+			/*width: 50%;*/
+		}
+
+	#Programming{
+		margin-left: 50px;
+		/*float: left;*/
+		color: white;
+	}
+
+	#Technical{
+		/*float: right;*/
+		color: red;
+
+	}
+
+	#Achievement li{
+
+			list-style: none;
+			padding: 15px;
+			background-color: black;
+			text-align: center;
+			color: white;
+			margin: 2px;
+			border-radius: inherit;
+			margin-left: 50px;
+			margin-right: 50px;
+
+		/*display: inline-flex;
+		align-items: center;
+		text-align: center;*/
+	}
+	.table{
+			width: 100%;
+			/*text-align: center;	*/
+					/*border: 1px solid #333;*/
+			border-spacing: 5px;
+
+			
+		}
+
+		.table-data{
+			/*width: 50%;*/
+			border: 1px solid #333;
+			/*border-style: ridge;*/
+			border-style: dotted;
+			border-radius: 10px;
+			background-color: pink;
+
+		}
+		#term{
+			text-align: center;
+			padding: 10px;
+			background-color: black;
+			color: white;
+		}
+
+		#Academic_table{
+			background-color: pink;
+			border: 1px solid black;
+			width: 100%;
+			text-align: center;
+			border-radius: 10px;
+
+		}
+
+		#Academic_table_head{
+			background-color: black;
+			color: white;
+			empty-cells: hide;
+		}
+		th{
+			background-color: black;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="header">
+	
+	<img align="right" src="Beautiful Baby.png" width="100px" height="100px" title="Mr Usama ">
+	<h1 >Muhammad Usama</h1>
+
+<address>
+	<p>Address</p> , <p>City</p> , <p>Provience</p> | <p>Zip</p> | <p>Phone # </p> | <p ><a href="mailto:usamaarain056@gmail.com" id="my_name" >Email: Usama Arain</a></p>
+</address>
+
+</div>
+
+
+<div class="Academic">
+	
+<h2>Academic Grade:</h2>
+
+
+<!-- Create table here -->
+
+<table id="Academic_table">
+	
+<thead id="Academic_table_head">
+	<th></th>
+	<th>Passing Year</th>
+	<th>CGPA/Percentage</th>
+	<th>College/University</th>
+	<th>Board</th>
+
+</thead>
+
+
+<tbody>
+	
+<tr>
+<th>Matric</th>
+
+<td>2015</td>
+<td>77%</td>
+<td>Gardenia Grammer High School</td>
+<td>Hyderabad Board of Education</td>
+
+</tr>
+
+<tr>
+
+<th>Intermediate</th>
+<td>2017</td>
+<td>75%</td>
+<td>Kohsar Degree College</td>
+<td>Hyderabad Board of Education</td>
+</tr>
+
+<tr>
+
+<th>University</th>
+<td>2020</td>
+<td>3.78 GPA</td>
+<td>Mehran University of Engineering and Technology</td>
+<td>Self Board</td>
+</tr>
+	<!-- <th>Intermediate</th>
+	<th></th>
+ -->
+</tbody>
+
+</table>
+
+
+<h2>Skills:</h2>
+
+
+<table class="table">
+	
+<td class="table-data">
+				<dl>
+					<dt id="term">Programming</dt>
+					<dd id="data_">
+						<ul>Java</ul>
+						<ul>Android</ul>
+						<ul>Python</ul>
+					</dd>
+				</dl>
+			</td>
+
+			<td class="table-data">
+				<dl>
+					<dt id="term">Technical</dt>
+					<dd id="data_">
+						<ul>Analytical</ul>
+						<ul>Error Detection</ul>
+						<ul>Testing</ul>
+					</dd>
+				</dl>
+			</td>
+			<td class="table-data">
+				<dl>
+					<dt id="term">Language</dt>
+					<dd id="data_">
+						<ul>English</ul>
+						<ul>Urdu</ul>
+						<ul>Punjabi</ul>
+					</dd>
+				</dl>
+			</td>
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="Achievement">
+	
+<h2>Awards/Achievement:</h2>
+
+<li>First Award</li>
+<li>Second Award</li>
+
+
+</div>
+
+
+<div id="Foot">
+	
+<h2>Copy Right Information</h2>
+<p>&copy Copy Right Information is provided over here</p>
+<p>Author Name <b>Usama Arain</b> <span>You can also Download His CV from <a href="Sample Letter.pdf" download="Sample Letter.pdf">Here</a></span> </p>
+</div>
+
+
+
+
+</body>
+</html>
