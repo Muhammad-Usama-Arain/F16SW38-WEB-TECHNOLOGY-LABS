@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+
+	<meta 	name="description" content="I am working on forms"/>
+	<meta charset="utf-8" name="keywords" content="Form, online, submit, formfilling" />
+	<meta charset="utf-8" name="robots" content="nofollow|noindex"/>
+	<meta charset="utf-8" http-equiv="author" content="Muhammad Usama"/>
+	<meta charset="utf-8" http-equiv="expires" content="23 March 20020">
+	<meta charset="utf-8" http-equiv="pragma" content="no-cache">
+
+	<style type="text/css">
+
+	div input{
+		float: right;
+	}
+
+	</style>
+</head>
+<body>
+
+
+<h1 style="text-align: center; background-color: black; color: white; padding: 20px;" >Payment Form</h1>
+
+<form style="padding-left: 30px;"  action="some.php" method="get">
+<h2>Contact Information</h2>
+	
+<fieldset style="background-color: silver; font-weight: bold; font-size: 18px;">
+
+	<legend>Title</legend>
+	
+<input type="radio" name="title" required="required">Miss<br/>
+<input type="radio" name="title" required="required">Mr
+
+</fieldset>
+
+<fieldset style="background-color: silver; margin-top: 20px; font-weight: bold; font-size: 18px; ">
+
+	<legend>Personal Information</legend>
+
+<div style="width: 25%;   ">
+	
+<p>Name: * <input type="text" name="name" required="required" pattern="[A-Za-z]{10}"></p>
+<p>Email: * <input type="Email" name="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"> </p>
+<p>Password: * <input type="Password" name="password" required="required" > </p>
+
+</div>
+
+</fieldset>
+
+<h2>Payment Information</h2>
+
+<fieldset style="background-color: silver; margin-top: 20px; font-weight: bold; font-size: 18px;">
+
+<legend>About Payment</legend>
+
+<div style="width: 25%" >
+<p>Card Type: *
+	<select  >
+	<option value="visa">Visa</option>
+	<option value="visa2">Visa2</option>
+	<option value="visa3" selected="selected" >Visa3</option> 
+	</select> 
+</p>
+<p>Card No: * <input type="Email" name="card_no" placeholder="Enter your card info here.." required="required" > </p>
+<p>Expiry Date: * <input type="Date" name="expiry_date" required="required" > </p>
+
+<p><input type="submit" name="submit_button" value="Validate the payment"></p>
+
+</div>
+
+</fieldset>
+
+</form>
+
+
+</body>
+</html>
+
+
+<!-- Tell me how to implement regular expressions to validate the form since required field is just a dummy nothing -->.
+<!-- Where we can see Role of meta tag -->
+
+<!-- <form>
+	
+Email:  <input type="email" name="somethign" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"><br/>
+Password: <input type="password" name="pass" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"><br/>
+
+<input type="submit" name="sub">
+
+</form> -->

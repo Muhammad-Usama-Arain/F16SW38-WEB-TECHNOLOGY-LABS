@@ -1,0 +1,4 @@
+Don't know why sumit button inside forms is not checking conditions!!
+
+While same piece of code is being executed by creating a stand alone button outside the form tags
+???????????

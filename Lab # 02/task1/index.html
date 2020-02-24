@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio/Video</title>
+	<style type="text/css">
+		
+
+
+body{
+	background-color: #608046;
+}
+
+#video {
+
+	background-color: inherit;
+	display: flex;
+	/*width: 854px;*/ /*WHY HAVIG CERTAIN WIDTH MADE justify-content: USE LESS*/
+	height: 480px;
+	/*width: 100%;*/
+	/*float: left;*/
+	justify-content: center;	
+	/*align-content: center;*/
+	/*margin-left: 70px;*/
+}
+
+div h1 { 
+	font-family: sans-serif;
+	text-align: center;
+	padding: 30px;
+	background-color: #8a9c7c;
+	color: white;
+}
+
+#audio {
+	padding: 50px;
+	background-color: inherit;
+	/*margin-top: 100px;*/
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="first_div">
+
+	<h1>Video and Audio Lab Practice</h1>
+<div id="video">
+<video  poster="thumbnail.png" controls="controls"  muted="muted" width="854px" height="480px">
+	
+	
+	<source src="Hindi.mkv" type="video/mp4">
+	<track label="English" kind="subtitles" src="sub/irish.srt" srclang="en">
+    <track label="French" kind="subtitles" src="sub/vid_sub_fr.vtt" srclang="fr">
+
+</video>
+</div>
+</div>
+
+<div>
+
+<div id="audio">
+<audio  controls="controls" autoplay="autoplay" muted="muted" width="854px" height="480px">
+	
+	<!-- Can accept both audio and video formats as shown in second source-->
+	<source src="audio_sample.mp3" type="audio/mp3">
+	<source src="Hindi.mkv" type="video/mp4">
+
+</audio>
+</div>
+</div>
+
+
+</body>
+</html>

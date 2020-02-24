@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation Using JavaScript</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"text/javascript>
+
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header" style="text-transform: uppercase; letter-spacing: 0.5em; color: Red; font-style: italic; text-align: center; font-size: 20px; ">
+    Feedback Form
+  </div>
+  <div class="card-body">
+    <h4 style="text-transform: uppercase; letter-spacing: 0.3em; color: Blue; font-style: inherit; ; font-size: 20px; " class="card-title">Enter your reviews about Education4All Service</h4>
+    <hr>
+
+    	
+    <h6>How would you rate the support you recieved?</h6>
+	<br>
+
+
+
+    <button class="btn btn-outline-success" id="btn1_s" > I am Satisfied</button>  
+    <button class="btn btn-outline-danger" id="btn1_d" style="margin-left: 50px;"> Not Sufficient</button>
+
+    <br>
+    <br>
+    <h6>Did did provide with enough materials that helps to proceed your carrier?</h6>
+    <br>
+
+    <button class="btn btn-outline-success" id="btn2_s"> Yes I found Handy Material</button>  
+
+    <button class="btn btn-outline-danger" id="btn2_d" style="margin-left: 50px;">Need Imporvement</button>
+  <br>
+    <br>
+
+ 	<form method="POST">
+        <label>Email</label> : <input type="email" name="user_email"  style="border-radius: 10px solid black" placeholder=" email@org.com" required="rE9" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+ 	<br>
+
+    <h5 style="text-transform: uppercase; letter-spacing: 0.3em; color: Blue; font-style: inherit; ; font-size: 20px; ">Any Suggestions or Questions</h5>
+    <textarea cols="60" rows="5" placeholder=" Kindly provide us with your feedback..."></textarea>
+    <br>
+   <!-- <input type="submit" name="oo" id="submit" value="Submit Your Request" class="btn btn-outline-success">  -->
+
+    <!-- Button trigger modal -->
+    <input type="submit" class="btn btn-outline-success" data-toggle="modal" value="Submit Feedback" id="submit" >
+
+    </form>
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Submission Done</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Email Pattern: username@industry.com
+                       username@org.com
+        Example : usamaarain056@gmail.com
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+   
+   
+    <!-- <button class="btn btn-outline-success" id="submit">Sumit Request</button> -->
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="formValidation.js"></script>>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
